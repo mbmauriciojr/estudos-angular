@@ -78,11 +78,15 @@
       <br><br>
 
       <input
+        #campoInput
         (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
         type="text"
       >
 
       <p>Valor Atual: {{ valorAtual }}</p>
+      <p>Valor Salvo: {{ valorSalvo }}</p>
 
     </div>
   </article>

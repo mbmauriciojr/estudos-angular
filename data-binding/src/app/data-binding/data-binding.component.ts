@@ -10,7 +10,9 @@ export class DataBindingComponent implements OnInit {
   url: string = 'http://loiane.com';
   cursoAngular: boolean = true;
   urlImagem: string = 'http://lorempixel.com.br/400/200/nature/';
+
   valorAtual: string = '';
+  valorSalvo: string = '';
 
 
   getValor() {
@@ -27,6 +29,10 @@ export class DataBindingComponent implements OnInit {
 
   onKeyUp(event: KeyboardEvent) {
     this.valorAtual = (<HTMLInputElement>event.target).value;
+  }
+
+  salvarValor(valor: any) {
+    this.valorSalvo = valor;
   }
 
   constructor() { }
