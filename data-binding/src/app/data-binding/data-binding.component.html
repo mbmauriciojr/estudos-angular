@@ -32,15 +32,25 @@
 
       <br><br>
 
-      <div class="alert alert-success" role="alert">...</div>
-      <div class="alert alert-info" role="alert">...</div>
-      <div class="alert alert-warning" role="alert">...</div>
-      <div class="alert alert-danger" role="alert">...</div>
+      <div class="alert" role="alert"
+      [class.alert-success]="classe.value == 'alert-success'">
+        Sucesso
+      </div>
 
-      <button type="button" class="btn btn-primary"
-        tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-        Simple demo
-      </button>
+      <div class="alert" role="alert"
+      [class.alert-info]="classe.value == 'alert-info'">
+        Info
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-warning]="classe.value == 'alert-warning'">
+        Warning
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-danger]="classe.value == 'alert-danger'">
+        Danger
+      </div>
 
     </div>
 
