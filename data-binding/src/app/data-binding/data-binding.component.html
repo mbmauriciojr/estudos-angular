@@ -8,4 +8,11 @@
     <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
   </article>
 
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImagem }}" alt="Imagem do por do sol">
+    <img [src]="urlImagem"> <!-- Formato mais utilizado -->
+    <img bind-src="urlImagem">
+  </article>
+
 </section>
