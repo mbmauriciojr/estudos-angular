@@ -9,6 +9,10 @@ export class DataBindingComponent implements OnInit {
 
   url: string = 'http://loiane.com';
 
+  getValor(){
+    return 1;
+  };
+
   constructor() { }
 
   ngOnInit(): void {
