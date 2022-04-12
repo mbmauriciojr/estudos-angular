@@ -51,9 +51,9 @@
         Warning
       </div>
 
-      <div class="alert" role="alert"
-      [class.alert-danger]="classe.value == 'alert-danger'">
-        Erro
+      <div class="alert alert-danger" role="alert"
+        [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">
+        Esse texto só aparece em caso de erro.
       </div>
 
     </div>
