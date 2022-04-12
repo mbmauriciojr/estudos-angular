@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class CursosService {
 
   constructor() { }
-}
+
+  getCursos() {
+    return ['JavaScript', 'Angular', 'React.Js', 'Node.Js'];
+  };
+
+};
