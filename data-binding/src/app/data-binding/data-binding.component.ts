@@ -12,12 +12,16 @@ export class DataBindingComponent implements OnInit {
   urlImagem: string = 'http://lorempixel.com.br/400/200/nature/';
 
 
-  getValor(){
+  getValor() {
     return 1;
   };
 
-  getCurtirCurso(){
+  getCurtirCurso() {
     return true;
+  }
+
+  botaoClicado() {
+    alert('Botão clicado');
   }
 
   constructor() { }
