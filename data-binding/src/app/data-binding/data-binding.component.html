@@ -119,6 +119,10 @@
         (input)="nome = valorInput.value"
       />
 
+      <input type="text"
+        [ngModel]="nome"
+        (ngModelChange)="nome = $event"
+      >
 
       <br><br>
 
