@@ -18,6 +18,11 @@ export class DataBindingComponent implements OnInit {
 
   nome: string = 'abc';
 
+  pessoa: any = {
+    nome: 'def',
+    idade: 20
+  }
+
   getValor() {
     return 1;
   };
