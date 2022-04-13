@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'contador',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutputPropertyComponent implements OnInit {
 
-  valor: number = 0;
+  @Input() valor: number = 0;
 
   incrementa() {
     this.valor ++;
