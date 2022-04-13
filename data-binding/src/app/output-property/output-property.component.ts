@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutputPropertyComponent implements OnInit {
 
+  valor: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
