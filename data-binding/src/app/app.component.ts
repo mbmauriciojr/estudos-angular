@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   valor: number = 5;
+
+  mudarValor() {
+    this.valor ++;
+  }
 }
