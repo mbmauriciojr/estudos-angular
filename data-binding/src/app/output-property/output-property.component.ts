@@ -9,6 +9,14 @@ export class OutputPropertyComponent implements OnInit {
 
   valor: number = 0;
 
+  incrementa() {
+    this.valor ++;
+  };
+
+  decrementa() {
+    this.valor --;
+  };
+
   constructor() { }
 
   ngOnInit(): void {
