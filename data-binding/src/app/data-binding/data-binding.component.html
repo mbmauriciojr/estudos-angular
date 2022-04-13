@@ -112,10 +112,13 @@
     <h3>Two-way data binding</h3>
 
     <div>
-
+      <!-- Este exemplo foi modificado para funcionar!-->
       <input type="text"
+        #valorInput
         [value]="nome"
+        (input)="nome = valorInput.value"
       />
+
 
       <br><br>
 
