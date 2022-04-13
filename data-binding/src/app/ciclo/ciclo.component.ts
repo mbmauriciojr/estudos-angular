@@ -5,6 +5,7 @@ import {
   AfterViewInit,
   Component,
   DoCheck,
+  Input,
   OnChanges,
   OnDestroy,
   OnInit
@@ -17,6 +18,8 @@ import {
 })
 export class CicloComponent implements OnChanges, OnInit, DoCheck,
   AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+
+  @Input() valorInicial: number = 10;
 
   constructor() { 
     this.log('constructor');
