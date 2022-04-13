@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-curso',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-property.component.css']
 })
 export class InputPropertyComponent implements OnInit {
+
+  @Input() nome: string = '';
 
   constructor() { }
 
