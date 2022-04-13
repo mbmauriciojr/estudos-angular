@@ -15,12 +15,12 @@ export class OutputPropertyComponent implements OnInit {
 
   incrementa() {
     this.campoValorInput.nativeElement.value ++;
-    this.mudouValor.emit({ novoValor: this.valor })
+    this.mudouValor.emit({novoValor: this.valor})
   };
 
   decrementa() {
     this.campoValorInput.nativeElement.value --;
-    this.mudouValor.emit({ novoValor: this.valor })
+    this.mudouValor.emit({novoValor: this.valor})
   };
 
   constructor() { }
