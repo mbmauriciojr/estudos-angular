@@ -19,3 +19,15 @@
 <br>
 
 <button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+
+<br>
+
+<p>Alternativa ao *ngIf</p>
+
+<div [hidden]="!mostrarCursos">
+  Lista de cursos aqui:
+</div>
+
+<div [hidden]="mostrarCursos">
+  Não existem cursos a serem listados!
+</div>
