@@ -20,7 +20,7 @@
 
 <button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
 
-<br>
+<br><br>
 
 <p>Alternativa ao *ngIf</p>
 
@@ -30,4 +30,21 @@
 
 <div [hidden]="mostrarCursos">
   Não existem cursos a serem listados!
+</div>
+
+<br>
+
+<h5>Forma que o Angular Traaduz o * das Diretivas</h5>
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos aqui:
+</div>
+
+<!-- Esse modo acabou travando a aplicação -->
+<!-- <template [ngIf]="mostrarCursos">
+  <div>Lista de Cursos aqui.</div>
+</template> -->
+
+<div template="ngIf mostrarCursos">
+  Lista de Cursos aqui.
 </div>
