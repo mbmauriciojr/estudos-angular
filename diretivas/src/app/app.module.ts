@@ -8,6 +8,7 @@ import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-conte
     DiretivaNgifComponent,
     DiretivaNgswitchComponent,
     DiretivaNgforComponent,
-    ExemploNgContentComponent
+    ExemploNgContentComponent,
+    FundoAmareloDirective
   ],
   imports: [
     BrowserModule,
